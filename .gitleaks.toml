@@ -1,0 +1,11 @@
+title = "12-Factor DevSecOps Gitleaks Config"
+
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Ignore local virtual environment and git metadata"
+paths = [
+    '''^venv/''',
+    '''^\.git/''',
+]
